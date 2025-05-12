@@ -1,0 +1,4 @@
+pandas==2.2.3
+biopython==1.85
+matplotlib==3.10.3
+datasets==3.6.0
