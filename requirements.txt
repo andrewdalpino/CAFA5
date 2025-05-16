@@ -2,3 +2,6 @@ pandas==2.2.3
 biopython==1.85
 matplotlib==3.10.3
 datasets==3.6.0
+obonet==1.1.1
+networkx==3.4.2
+neo4j==5.28.1
