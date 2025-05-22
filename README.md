@@ -15,7 +15,7 @@ The dataset is divided into four subsets according to the GO terms that the sequ
 
 ## Splits
 
-We provide a 90/10 `train` and `test` split for your convenience. The splits were determined using a stratified approach which assigns cluster numbers to sequences based on their terms embedding. Accordingly, we expect that each split is a faithful representation of GO term distribution of the full set. 
+We provide a 90/10 `train` and `test` split for your convenience. The splits were determined using a stratified approach which assigns cluster numbers to sequences based on their terms embeddings. Accordingly, we expect that each split is a faithful representation of GO term distribution of the full set. 
 
 ## Example Usages
 
@@ -37,6 +37,12 @@ You can also specify a split to load like in the example below.
 
 ```python
 dataset = load_dataset("andrewdalpino/CAFA5", split="train")
+```
+
+Filter records by the length of the sequence like in the example below.
+
+```python
+dataset = dataset.filter(lambda sample: sample["length"] <= 2048)
 ```
 
 ### Original Dataset Citation
